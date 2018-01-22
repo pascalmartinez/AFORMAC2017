@@ -5,8 +5,26 @@
     <title></title>
   </head>
   <body>
+  <form class="" action="resultat.php" method="post">
+    <p>Veuillez rentrer votre prénom s'il vous plaît.</p>
+    <input type="text" name="prenom" value="">
+    <p>Veuillez rentrer votre nom.</p>
+    <input type="text" name="nom" value="">
+    <p>Veuillez indiquer votre adresse.</p>
+    <input type="text" name="adresse" value="">
+    <p>Veuillez rentrer votre age.</p>
+    <input type="number" name="age" value="">
+    <p>Veuillez rentrer votre téléphone.</p>
+    <input type="tel" name="telephone" value="">
+    <p>Veuillez rentrer votre e-mail.</p>
+    <input type="email" name="mail" value="" ></br>
+    <input type="checkbox" name="" value="">
+    <p>Cocher la case pour accepter l'envoi de newsletter.</p>
+    <input type="submit" value="Valider" />
+    <p>Appuyer pour envoyer.</p>
+  </form>
 
-    <?php echo "Coucou"; ?>
+
 
   </body>
 </html>
