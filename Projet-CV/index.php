@@ -5,7 +5,16 @@
     <title></title>
   </head>
   <body>
-  <form class="" action="resultat.php" method="post">
+
+    <?php
+      if (isset($_GET["resultat"])) {
+        echo $_GET["resultat"];
+
+        //inset = est-ce que ca existe? oui alors affiche moi le resultat
+      }
+    ?>
+
+  <form class="" action="verification.php" method="post">
     <p>Veuillez rentrer votre prénom s'il vous plaît.</p>
     <input type="text" name="prenom" value="">
     <p>Veuillez rentrer votre nom.</p>
