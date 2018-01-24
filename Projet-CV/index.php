@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html>
   <head>
+
     <meta charset="utf-8">
-    <title></title>
+    <title>Projet php jquery</title>
   </head>
   <body>
 
@@ -32,6 +33,13 @@
     <input type="submit" value="Valider" />
     <p>Appuyer pour envoyer.</p>
   </form>
+
+
+  <span >Je vais grossir!!!!</span>
+  <button >CLICK</button>
+  <script src="script.js"></script>
+
+  <script src="librairies/jquery.js"></script>
 
 
 

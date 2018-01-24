@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <script src="jquery.js"></script>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+
+
+
+    <title>Ajax the come back: l'heure</title>
+  </head>
+  <body>
+    <h2>Exo AJAX</h2>
+
+    <form class="formulaire"  method="post">
+      <div class="return"></div>
+      <input type="text" placeholder="Votre nom" class="nom"><br>
+      <textarea placeholder="Votre message" class="message" rows="8" cols="80"></textarea><br>
+      <input type="submit" class="submit" value="Envoyer...">
+
+    </form>
+
+    <div id="date">
+    <h1>Va y donne tout</h1>
+    <button type="button" onclick="loadDoc()">Change Content</button>
+    </div>
+
+    <script>
+    function loadDoc() {
+      var xhttp = new XMLHttpRequest();
+      xhttp.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+          document.getElementById("date").innerHTML =
+          this.responseText;
+        }
+      };
+      xhttp.open("GET", "php.php", true);
+      xhttp.send();
+    }
+    </script>
+
+
+
+
+  </body>
+</html>
