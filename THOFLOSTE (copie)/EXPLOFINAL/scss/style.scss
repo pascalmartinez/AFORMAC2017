@@ -1,0 +1,107 @@
+//sass --watch style.scss:../style.css   commande terminal//
+
+$screenleftdroite: yellow;
+$screenrightgauche: lightblue;
+$screenrightdroite: blue;
+$retourgauche: black;
+$retourdroite: red;
+$bordure: black;
+$texteretour: white;
+$taillegrand: 30px;
+$taillepetit: 15px;
+$tailleimagesgrand: 50px;
+$radius: 10px;
+$tailleimagespetit: 20px;
+$centre:center;
+$barreRech: red;
+
+// faire le tri dans les variables
+// voir si possibilité de grouper les fonctions
+
+
+
+
+.screenleft{
+    background-image:url(../img/bob.jpg);
+    background-size: cover;
+
+    font-size: $taillepetit;
+    border-style: solid;
+    border-color: $bordure;
+    border-bottom-left-radius: $radius;
+
+
+
+}
+
+@media (min-width: 700px) {
+   .screenleft{
+      font-size: $taillegrand;
+   }
+}
+
+.screenright{
+  background-image:url(../img/dory.jpg);
+  background-size: cover;
+  border-style: solid;
+  border-color: $bordure;
+  border-bottom-right-radius: $radius;
+
+  font-size: $taillepetit;
+}
+
+@media (min-width: 700px) {
+   .screenright{
+      font-size: $taillegrand;
+   }
+}
+
+.linkdossier:hover{
+  cursor: pointer;
+  letter-spacing: 3px;
+  font-weight: bold;
+  background-color: rgba(0,0,0,0.5)
+}
+
+.retour{
+  background-color: $barreRech;
+  border-right-style: solid;
+  border-left-style: solid;
+  border-color: $bordure;
+  color: $texteretour;
+  text-align: $centre;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.barreRech, .access {
+   background-color: $barreRech;
+   border-right-style: solid;
+   border-left-style: solid;
+   border-color: $bordure;
+   color: $texteretour;
+   text-align: $centre;
+}
+
+.access{
+   border-top-style: solid;
+}
+
+.butback{
+   background-color: white;
+   border-radius: 2px;
+   width: 100px;
+   height: 40px;
+}
+
+.images{
+  height: $tailleimagespetit;
+  width: $tailleimagespetit;
+}
+
+@media (min-width: 700px) {
+   .images{
+      height: $tailleimagesgrand;
+      width: $tailleimagesgrand;
+   }
+}

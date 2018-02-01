@@ -1,0 +1,53 @@
+#div2 {
+  margin: 20px 20px 20px 20px;
+}
+
+body {
+  line-height: initial;
+}
+
+/*[class*="fil"] {
+
+  background-color: grey;
+  /*border: 2px solid black;
+  /*border-radius: 6px;
+  /*line-height: 40px;
+
+}*/
+
+.fil:hover {
+  background: linear-gradient(to right, rgba(0,0,0,0) 21%, rgba( 255, 109, 253 ,1) 61%);
+
+}
+
+
+
+#rep {
+
+  color: grey;
+  height: 21px;
+  background-image: url("../img/folder.png");
+  background-size: 80px;
+  background-repeat: no-repeat;
+  width: 70%;
+  text-align: right;
+}
+
+#rep:hover{
+
+
+  background-color:   #ffa4fe ;
+
+}
+
+#div1 {
+  margin-top:20px;
+}
+
+#btbk:hover{
+  background: linear-gradient(to right, rgba(0,0,0,0) 55%, rgba( 255, 21, 253 ,1) 61%);
+}
+
+body {
+          background-color: white;
+}
