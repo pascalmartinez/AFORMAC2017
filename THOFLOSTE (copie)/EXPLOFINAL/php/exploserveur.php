@@ -1,4 +1,7 @@
 <?php
+//Modification des nom de variables pour uniformiser l'écriture et l'indentation
+//Suppression de fonction inutile permettant de bloquer le clic droit ainsi que le débuggeur
+//Suppression d'une fonction redondante
 
    // vérification en cas de bug
    if ($_POST['url']==null) {
@@ -53,32 +56,30 @@
    }
 
    /////* listage des fichiers *//////
-   //$cmdLs='ls -s \*.\* '.$url;
-   //$cmdLs='tree -L 1 -type f '.$url;
    $cmdLs='find '.$url.' -maxdepth 1 -type f ';
    $lsData=shell_exec($cmdLs);
 
 
    // lecture du fichier contenant la liste des fichiers
 
-   $fil_lght=strlen($lsData);
+   $filLght=strlen($lsData);
    $tabFil=[];
    $tabShortFil=[];
-   $fil_current='';
+   $filCurrent='';
 // Revoir les noms des variables
-   for ($j=0; $j < $fil_lght; $j++) {
+   for ($j=0; $j < $filLght; $j++) {
      if (ctype_space($lsData[$j])) {
-       array_push($tabFil,$fil_current);
-       //ajout du répertoire trouvé dans le tabkleau des répertoires
-       $fil_short=basename($fil_current);
-       $fil_short=ucfirst($fil_short);
-       $fil_current='';
+       array_push($tabFil,$filCurrent);
+       //ajout du répertoire trouvé dans le tableau des répertoires
+       $fileShort=basename($filCurrent);
+       $fileShort=ucfirst($fileShort);
+       $filCurrent='';
        //vidage du répertoire copié
-       array_push($tabShortFil,$fil_short);
+       array_push($tabShortFil,$fileShort);
        // ajout de la liste des noms de répertoires
      }
      else {
-       $fil_current=$fil_current.$lsData[$j];
+       $filCurrent=$filCurrent.$lsData[$j];
        //remplissage de l'adresse de chaque répertoire
 
      }
