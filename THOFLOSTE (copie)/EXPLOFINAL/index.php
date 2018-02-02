@@ -5,9 +5,12 @@
    <link rel="stylesheet" href="scss/style.css">
    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
    <title>Explorateur</title>
-   <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+   <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
    <script src="js/script2.js"></script>
   </head>
+
+<!-- Factorisation des pages (suppression d'une page index) + SCSS et CSS -->
+<!-- Modification des noms des div -->
 
   <body id="idbody" onload="go()">
     <div class="container-fluid">

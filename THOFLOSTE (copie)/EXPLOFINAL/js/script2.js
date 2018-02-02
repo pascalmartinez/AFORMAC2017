@@ -1,20 +1,3 @@
-function rename(id){
-  var id_renam ="#"+id;
-  var urlfil = $(id_renam).attr('name');
-  var newurlfile = 'MGT HACK';
-  alert(urlfil);
-  $.ajax({
-    type: 'post',
-    url: 'rename1.0.php',  //page de traitement a appeller
-    data: {oriname:urlfil,newname:newurlfile},
-    //data: passage des variables préparées à la page php de traitement
-    success: function(response,status){
-       alert(response);
-    }
-
-});
-
-}
 
 function go(id){
 // préparation des variables pour l'ajax
@@ -42,7 +25,6 @@ function go(id){
        var urlcur = $(id_clk).attr('name');
 
       }
-
   }
 
 // lancement du nettoyage de page AJAX

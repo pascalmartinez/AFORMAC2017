@@ -6,9 +6,17 @@
   border-color: black;
   border-bottom-left-radius: 10px; }
 
-@media (min-width: 700px) {
-  .screenleft {
-    font-size: 30px; } }
+@media (min-width: 700px)
+{
+.screenleft {
+    font-size: 30px; }
+.screenright {
+    font-size: 30px; }
+.images {
+    height: 50px;
+    width: 50px; }
+
+ }
 .screenright {
   background-image: url(../img/dory.jpg);
   background-size: cover;
@@ -17,9 +25,6 @@
   border-bottom-right-radius: 10px;
   font-size: 15px; }
 
-@media (min-width: 700px) {
-  .screenright {
-    font-size: 30px; } }
 .linkdossier:hover {
   cursor: pointer;
   letter-spacing: 3px;
@@ -27,28 +32,24 @@
   background-color: rgba(0, 0, 0, 0.5); }
 
 .retour {
-  background-color: red;
-  border-right-style: solid;
-  border-left-style: solid;
-  border-color: black;
-  color: white;
-  text-align: center;
   padding-top: 5px;
   padding-bottom: 5px; }
 
-.barreRech, .access {
-  background-color: red;
-  border-right-style: solid;
-  border-left-style: solid;
-  border-color: black;
-  color: white;
-  text-align: center; }
+.barreRech, .access, .retour{
+    background-color: red;
+    border-right-style: solid;
+    border-left-style: solid;
+    border-color: black;
+    color: white;
+    text-align: center;
+
+  }
 
 .access {
   border-top-style: solid; }
 
 .butback {
-  background-color: white;
+  background-color: black;
   border-radius: 2px;
   width: 100px;
   height: 40px; }
@@ -57,9 +58,6 @@
   height: 20px;
   width: 20px; }
 
-@media (min-width: 700px) {
-  .images {
-    height: 50px;
-    width: 50px; } }
+
 
 /*# sourceMappingURL=style.css.map */
